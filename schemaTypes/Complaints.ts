@@ -50,5 +50,17 @@ export default defineType({
       type: 'string',
       title: 'Complaint Person Nbr',
     }),
+    defineField({
+      name: 'complaint_images',
+      type: 'array',
+      title: 'Complaint Images',
+      of: [{type: 'image', options: {hotspot: true}}],
+    }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      media: 'image',
+    },
+  },
 })
