@@ -11,6 +11,11 @@ export default defineType({
       title: 'Complaint',
     }),
     defineField({
+      name: 'priority',
+      type: 'string',
+      title: 'Priority',
+    }),
+    defineField({
       name: 'complaint_status',
       type: 'string',
       title: 'Complaint Status',
@@ -36,9 +41,9 @@ export default defineType({
       title: 'Complaint Description',
     }),
     defineField({
-      name: 'complaint_person_id',
+      name: 'complaint_name',
       type: 'string',
-      title: 'Complaint Person ID',
+      title: 'Complaintor Name',
     }),
     defineField({
       name: 'complaint_person_nbr',
